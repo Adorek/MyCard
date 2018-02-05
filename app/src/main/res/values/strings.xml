@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">My Card</string>
     <string name="kisses">Kisses</string>
-    <string name="for">for</string>
+    <string name="dla">for</string>
     <string name="pepusia">Pepusia</string>
     <string name="from">From</string>
-    <string name="adorek">Adorek</string>
+    <string name="adorek"> Adorek</string>
 </resources>

@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/pepusia"
+        android:src="@drawable/pepusia_horizontal"
         android:layout_alignParentTop="true"/>
+
 
     <ImageView
         android:layout_width="80sp"
@@ -36,7 +38,8 @@
         android:layout_marginEnd="44dp"
         android:layout_marginRight="44dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/heart" />
+        android:src="@drawable/heart"
+        android:id="@+id/imageView3" />
 
     <RelativeLayout
     android:layout_width="wrap_content"
@@ -59,7 +62,7 @@
         android:id="@+id/for_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/for"
+        android:text="@string/dla"
         android:layout_below="@id/pepa"
         android:layout_toRightOf="@id/pepa"
         android:textSize="24sp"
@@ -80,31 +83,32 @@
 </RelativeLayout>
 
     <RelativeLayout
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="20sp"
-        >
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView3"
+        android:padding="20sp">
 
         <TextView
             android:id="@+id/from"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/from"
-            android:textSize="24sp"
             android:background="?attr/colorControlHighlight"
-            android:textColor="@android:color/white" />
+            android:text="@string/from"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/adorek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/adorek"
-            android:layout_below="@id/from"
+            android:layout_alignParentBottom="true"
             android:layout_toRightOf="@id/from"
-            android:textSize="24sp"
             android:background="?attr/colorControlHighlight"
-            android:textColor="@android:color/white" />
-
+            android:text="@string/adorek"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
     </RelativeLayout>
 
